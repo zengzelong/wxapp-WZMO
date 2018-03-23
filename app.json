@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/user/index",
+    "pages/index/index",
+    "pages/scan/index",
+    "pages/logs/logs",
+    "pages/posts/add",
+    "pages/user/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#5ca6ef",
+    "navigationBarTitleText": "腾膜+",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "腾膜+",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/posts/add",
+        "text": "添加",
+        "iconPath": "assets/icons/add.png",
+        "selectedIconPath": "assets/icons/add-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我",
+        "iconPath": "assets/icons/face.png",
+        "selectedIconPath": "assets/icons/face-active.png"
+      }
+    ]
+  }
+}

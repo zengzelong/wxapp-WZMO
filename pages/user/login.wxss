@@ -1,0 +1,33 @@
+/* pages/user/login.wxss */
+
+.page__bd {
+
+  padding: 10px;
+
+}
+
+.weui-cells {
+
+  background-color: #F8F8F8;
+
+}
+
+.weui-input {
+  height:4em;
+  min-height:2.58823529em;
+  line-height:4em;
+}
+
+.weui-vcode-btn,.weui-vcode-img {
+  height:4em;
+  line-height:4em;
+
+  vertical-align:middle;
+}
+
+.user-reg {
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
