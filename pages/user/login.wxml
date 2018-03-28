@@ -1,31 +1,35 @@
 <view class="page">
-    
+
     <view class="page__bd">
-        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showMessage}}">{{message}}</view>
 
 
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入手机号"/>
+                    <input class="weui-input" placeholder="请输入手机号" bindinput="onInputMobile"/>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input weui-cell_vcode">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入验证码" />
+                    <input class="weui-input" placeholder="请输入验证码" bindinput="onInputCaptcha" />
                 </view>
                 <view class="weui-cell__ft">
                     <view class="weui-vcode-btn">获取验证码</view>
                 </view>
             </view>
 
-            
+
         </view>
 
- 
-  
+
+
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="showTopTips">登录</button>
+            <button class="weui-btn" type="primary" bindtap="onTapLogin">登录</button>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="onTapWXLogin">微信登录</button>
         </view>
 
         <view class='user-reg'>
